@@ -1,19 +1,19 @@
 ## Requirements
 
-| Name                                                                         | Version                              |
-| ---------------------------------------------------------------------------- | ------------------------------------ |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform)    | >=1.3                                |
-| <a name="requirement_google"></a> [google](#requirement\_google)             | >= 4.80.0, < 5.0, !=4.65.0, !=4.65.1 |
-| <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | ~> 2.10                              |
-| <a name="requirement_random"></a> [random](#requirement\_random)             | >= 2.1                               |
+| Name                                                                         | Version |
+| ---------------------------------------------------------------------------- | ------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform)    | >=1.3   |
+| <a name="requirement_google"></a> [google](#requirement\_google)             | 5.2.0   |
+| <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | ~> 2.23 |
+| <a name="requirement_random"></a> [random](#requirement\_random)             | >= 3.5  |
 
 ## Providers
 
-| Name                                                                   | Version                              |
-| ---------------------------------------------------------------------- | ------------------------------------ |
-| <a name="provider_google"></a> [google](#provider\_google)             | >= 4.80.0, < 5.0, !=4.65.0, !=4.65.1 |
-| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | ~> 2.10                              |
-| <a name="provider_random"></a> [random](#provider\_random)             | >= 2.1                               |
+| Name                                                                   | Version |
+| ---------------------------------------------------------------------- | ------- |
+| <a name="provider_google"></a> [google](#provider\_google)             | 5.2.0   |
+| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | ~> 2.23 |
+| <a name="provider_random"></a> [random](#provider\_random)             | >= 3.5  |
 
 ## Modules
 
@@ -23,38 +23,38 @@ No modules.
 
 | Name                                                                                                                                                                                  | Type        |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [google_compute_firewall.intra_egress](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall)                                               | resource    |
-| [google_compute_firewall.master_webhooks](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall)                                            | resource    |
-| [google_compute_firewall.shadow_allow_inkubelet](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall)                                     | resource    |
-| [google_compute_firewall.shadow_allow_master](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall)                                        | resource    |
-| [google_compute_firewall.shadow_allow_nodes](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall)                                         | resource    |
-| [google_compute_firewall.shadow_allow_pods](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall)                                          | resource    |
-| [google_compute_firewall.shadow_deny_exkubelet](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall)                                      | resource    |
-| [google_compute_shared_vpc_service_project.service_project](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_shared_vpc_service_project)        | resource    |
-| [google_compute_subnetwork_iam_member.gke_api_service_agent](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork_iam_member)            | resource    |
-| [google_compute_subnetwork_iam_member.gke_service_account](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork_iam_member)              | resource    |
-| [google_container_cluster.primary](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster)                                                  | resource    |
-| [google_container_node_pool.pools](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_node_pool)                                                | resource    |
-| [google_container_node_pool.windows_pools](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_node_pool)                                        | resource    |
-| [google_project_iam_member.cluster_service_account_artifact_registry](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member)              | resource    |
-| [google_project_iam_member.cluster_service_account_gcr](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member)                            | resource    |
-| [google_project_iam_member.cluster_service_account_log_writer](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member)                     | resource    |
-| [google_project_iam_member.cluster_service_account_metric_writer](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member)                  | resource    |
-| [google_project_iam_member.cluster_service_account_monitoring_viewer](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member)              | resource    |
-| [google_project_iam_member.cluster_service_account_resourceMetadata_writer](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member)        | resource    |
-| [google_project_iam_member.gke_service_account_security_admin](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member)                     | resource    |
-| [google_project_iam_member.gke_service_account_service_agent_user](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member)                 | resource    |
-| [google_service_account.cluster_service_account](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/service_account)                                      | resource    |
+| [google_compute_firewall.intra_egress](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_firewall)                                                | resource    |
+| [google_compute_firewall.master_webhooks](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_firewall)                                             | resource    |
+| [google_compute_firewall.shadow_allow_inkubelet](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_firewall)                                      | resource    |
+| [google_compute_firewall.shadow_allow_master](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_firewall)                                         | resource    |
+| [google_compute_firewall.shadow_allow_nodes](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_firewall)                                          | resource    |
+| [google_compute_firewall.shadow_allow_pods](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_firewall)                                           | resource    |
+| [google_compute_firewall.shadow_deny_exkubelet](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_firewall)                                       | resource    |
+| [google_compute_shared_vpc_service_project.service_project](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_shared_vpc_service_project)         | resource    |
+| [google_compute_subnetwork_iam_member.gke_api_service_agent](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_subnetwork_iam_member)             | resource    |
+| [google_compute_subnetwork_iam_member.gke_service_account](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_subnetwork_iam_member)               | resource    |
+| [google_container_cluster.primary](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_cluster)                                                   | resource    |
+| [google_container_node_pool.pools](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_node_pool)                                                 | resource    |
+| [google_container_node_pool.windows_pools](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_node_pool)                                         | resource    |
+| [google_project_iam_member.cluster_service_account_artifact_registry](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/project_iam_member)               | resource    |
+| [google_project_iam_member.cluster_service_account_gcr](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/project_iam_member)                             | resource    |
+| [google_project_iam_member.cluster_service_account_log_writer](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/project_iam_member)                      | resource    |
+| [google_project_iam_member.cluster_service_account_metric_writer](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/project_iam_member)                   | resource    |
+| [google_project_iam_member.cluster_service_account_monitoring_viewer](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/project_iam_member)               | resource    |
+| [google_project_iam_member.cluster_service_account_resourceMetadata_writer](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/project_iam_member)         | resource    |
+| [google_project_iam_member.gke_service_account_security_admin](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/project_iam_member)                      | resource    |
+| [google_project_iam_member.gke_service_account_service_agent_user](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/project_iam_member)                  | resource    |
+| [google_service_account.cluster_service_account](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/service_account)                                       | resource    |
 | [kubernetes_config_map.ip-masq-agent](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/config_map)                                                  | resource    |
 | [kubernetes_config_map_v1_data.kube-dns](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/config_map_v1_data)                                       | resource    |
 | [kubernetes_config_map_v1_data.kube-dns-upstream-nameservers-and-stub-domains](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/config_map_v1_data) | resource    |
 | [kubernetes_config_map_v1_data.kube-dns-upstream-namservers](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/config_map_v1_data)                   | resource    |
 | [random_shuffle.available_zones](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/shuffle)                                                              | resource    |
 | [random_string.cluster_service_account_suffix](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string)                                                 | resource    |
-| [google_compute_subnetwork.gke_subnetwork](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/compute_subnetwork)                                      | data source |
-| [google_compute_zones.available](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/compute_zones)                                                     | data source |
-| [google_container_engine_versions.region](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/container_engine_versions)                                | data source |
-| [google_container_engine_versions.zone](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/container_engine_versions)                                  | data source |
+| [google_compute_subnetwork.gke_subnetwork](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_subnetwork)                                       | data source |
+| [google_compute_zones.available](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_zones)                                                      | data source |
+| [google_container_engine_versions.region](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/container_engine_versions)                                 | data source |
+| [google_container_engine_versions.zone](https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/container_engine_versions)                                   | data source |
 
 ## Inputs
 
